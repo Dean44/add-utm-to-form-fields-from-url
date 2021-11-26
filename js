@@ -72,9 +72,9 @@ function getAllUrlParams(url) {
 }
 
 // update utm fields
-document.getElementById("form_submission_custom_28").value = getAllUrlParams().utm_source;
-document.getElementById("form_submission_custom_29").value = getAllUrlParams().utm_medium;
-document.getElementById("form_submission_custom_30").value = getAllUrlParams().utm_campaign;
-document.getElementById("form_submission_custom_31").value = getAllUrlParams().utm_content;
+if(getAllUrlParams().utm_source)   { document.getElementById("form_submission_custom_28").value = getAllUrlParams().utm_source; }
+if(getAllUrlParams().utm_medium)   { document.getElementById("form_submission_custom_29").value = getAllUrlParams().utm_medium; }
+if(getAllUrlParams().utm_campaign) { document.getElementById("form_submission_custom_30").value = getAllUrlParams().utm_campaign; }
+if(getAllUrlParams().utm_content)  { document.getElementById("form_submission_custom_31").value = getAllUrlParams().utm_content; }
 
 </script>
